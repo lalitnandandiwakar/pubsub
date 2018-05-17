@@ -28,6 +28,7 @@ def receive_message_from_pub_sub(topic_name, subscription_name):
         #subscription.acknowledge([ack_id for ack_id, message in results])
 
 
+
 def process_order(data):
     time.sleep(6)
 

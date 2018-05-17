@@ -20,7 +20,7 @@ def receive_message_from_pub_sub(topic_name, subscription_name, callback):
     print('Received {} messages.'.format(len(results)))
     for ack_id, message in results:
         print('* {}: {}, {}'.format(
-            message.message_id, message.data))
+            message.message_id, message.data, message.attributes))
         callback(message)
         print 'processed the message ' + repr(message.message_id)
 
