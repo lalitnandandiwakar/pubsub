@@ -28,10 +28,11 @@ def receive_message_from_pub_sub(topic_name, subscription_name):
         #subscription.acknowledge([ack_id for ack_id, message in results])
 
 
-
 def process_order(data):
     time.sleep(6)
 
 
 while True:
     receive_message_from_pub_sub('pub1', 'sub1')
+    receive_message_from_pub_sub('pub2', 'sub2')
+    receive_message_from_pub_sub('pub3', 'sub3')

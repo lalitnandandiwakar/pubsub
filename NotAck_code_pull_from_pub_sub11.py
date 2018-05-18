@@ -33,4 +33,4 @@ def process_order(data):
 
 
 while True:
-    receive_message_from_pub_sub('pub1', 'sub11')
+    receive_message_from_pub_sub('pub1', 'sub1')
